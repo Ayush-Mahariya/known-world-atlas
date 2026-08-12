@@ -1,0 +1,20 @@
+# python
+.venv/
+__pycache__/
+*.pyc
+
+# node
+node_modules/
+web/dist/
+
+# generated app data — rebuild with scripts/sync-web-data.sh
+web/public/data/
+# generated tiles — rebuild with pipeline stages 08 and 09
+web/public/tiles/
+
+# large downloaded sources — refetch with scripts/fetch-sources.sh
+data/raw/awoiaf-dump.7z
+data/raw/basemaps/
+
+# os
+.DS_Store

@@ -1,0 +1,44 @@
+# Licence
+
+**Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+(CC BY-NC-SA 4.0)** — <https://creativecommons.org/licenses/by-nc-sa/4.0/>
+
+This applies to the whole repository: source code, pipeline, generated data,
+and generated tiles.
+
+## Why this licence and not a permissive one
+
+The project is not free to relicense. Its map geometry comes from the ASOIAF GIS
+shapefiles by cadaei, theMountainGoat and Tear, published under **CC BY-NC-SA
+3.0**. That geometry is load-bearing — remove it and there is no map — and the
+ShareAlike term requires adaptations to be distributed under the same or a
+compatible licence. CC BY-NC-SA 4.0 is the designated compatible successor.
+
+Everything derived from that geometry inherits the same terms, which includes
+the gazetteer, the terrain grid, the synthesised elevation model, and both tile
+sets. The source code is placed under the same licence rather than a permissive
+one simply so the repository has one answer instead of two.
+
+## What this means in practice
+
+You may share and adapt this work, including modifying it, provided you:
+
+- **give attribution** — see [NOTICE.md](NOTICE.md) for the full chain of credit
+  that must travel with the map data;
+- **do not use it commercially** — no ads, no paid access, no bundling into a
+  commercial product or service;
+- **share alike** — distribute your modifications under these same terms.
+
+## What this licence does not cover
+
+*A Song of Ice and Fire*, *A Game of Thrones*, *House of the Dragon*, *A Knight
+of the Seven Kingdoms*, and the world, places, houses and history they describe
+are the intellectual property of **George R. R. Martin** and his licensees. This
+is an unofficial, non-commercial fan project and claims no rights over them.
+
+Article text drawn from A Wiki of Ice and Fire, the A Song of Ice and Fire Wiki
+and the Game of Thrones Wiki is licensed **CC BY-SA** by those wikis and their
+contributors, and is attributed per-article in the application.
+
+Third-party software dependencies keep their own licences; see
+[NOTICE.md](NOTICE.md).
