@@ -1,0 +1,29 @@
+{
+  "_comment": [
+    "Canonical places absent from the cadaei shapefile set, patched in by",
+    "pipeline/03_build_gazetteer.py. Coordinates are positioned relative to",
+    "neighbouring places that ARE in the source data, so they stay consistent",
+    "with the rest of the map rather than with any external map's projection.",
+    "Set \"confirmed\": false for anything whose position is inferred."
+  ],
+  "places": [
+    {
+      "name": "Casterly Rock",
+      "type": "Castle",
+      "size": 5,
+      "confirmed": true,
+      "lon": 7.24,
+      "lat": 5.52,
+      "positioning": "Immediately north of Lannisport (7.365, 5.222), which the source data does include; the Rock overlooks the city and the Sunset Sea."
+    },
+    {
+      "name": "Bear Island",
+      "type": "Castle",
+      "size": 2,
+      "confirmed": true,
+      "lon": 10.43,
+      "lat": 31.994,
+      "positioning": "Centroid of the Bear Island polygon in the source Islands layer; the Mormont keep is the island's only settlement."
+    }
+  ]
+}
