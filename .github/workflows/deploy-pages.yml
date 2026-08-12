@@ -1,0 +1,63 @@
+# Build and publish the atlas to GitHub Pages.
+#
+# Only needed if you deploy via GitHub Pages. On Cloudflare Pages you point the
+# project at this repo and set the build command instead — see
+# docs/07-deployment.md.
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    # accepts either default branch name, so this works whether the repo was
+    # created by `git init` (master) or on GitHub (main)
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# let an in-flight deploy finish rather than cancelling it mid-publish
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # the tile builders use only the Python standard library, so there is
+      # nothing to pip install
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Build site
+        run: bash scripts/build-site.sh
+
+      - name: Verify the router still matches the Python reference
+        working-directory: web
+        run: npm run test:parity
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
