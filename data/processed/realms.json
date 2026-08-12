@@ -1,0 +1,189 @@
+[
+  {
+    "name": "Beyond the Wall",
+    "bbox": [
+      0.9011,
+      33.7165,
+      21.8153,
+      49.1022
+    ],
+    "sourceName": "",
+    "claimedBy": "Wildlings",
+    "lon": 9.47592,
+    "lat": 48.33294,
+    "slug": "beyond-the-wall",
+    "hue": 0.0,
+    "colour": "#c62f2f",
+    "labelColour": "#841515"
+  },
+  {
+    "name": "The Gift",
+    "bbox": [
+      14.1516,
+      32.9211,
+      21.4322,
+      35.2101
+    ],
+    "sourceName": "The Gift",
+    "claimedBy": "Night's Watch",
+    "lon": 18.04672,
+    "lat": 34.16861,
+    "slug": "the-gift",
+    "hue": 30.0,
+    "colour": "#c67a2f",
+    "labelColour": "#844c15"
+  },
+  {
+    "name": "The North",
+    "bbox": [
+      4.8678,
+      14.8078,
+      26.0093,
+      37.5826
+    ],
+    "sourceName": "The North",
+    "claimedBy": "Stark",
+    "lon": 16.38993,
+    "lat": 26.30911,
+    "slug": "the-north",
+    "hue": 60.0,
+    "colour": "#c6c62f",
+    "labelColour": "#848415"
+  },
+  {
+    "name": "The Vale",
+    "bbox": [
+      16.149,
+      8.6825,
+      26.2902,
+      18.318
+    ],
+    "sourceName": "The Vale",
+    "claimedBy": "Arryn",
+    "lon": 19.95195,
+    "lat": 12.92213,
+    "slug": "the-vale",
+    "hue": 90.0,
+    "colour": "#7ac62f",
+    "labelColour": "#4c8415"
+  },
+  {
+    "name": "The Iron Islands",
+    "bbox": [
+      5.7109,
+      10.8266,
+      9.3605,
+      13.3901
+    ],
+    "sourceName": "The Iron Islands",
+    "claimedBy": "Greyjoy",
+    "lon": 8.92259,
+    "lat": 11.852,
+    "slug": "the-iron-islands",
+    "hue": 120.0,
+    "colour": "#2fc62f",
+    "labelColour": "#158415"
+  },
+  {
+    "name": "Riverlands",
+    "bbox": [
+      10.6708,
+      4.1072,
+      20.5154,
+      16.5553
+    ],
+    "sourceName": "Riverlands",
+    "claimedBy": "Tully",
+    "lon": 15.78998,
+    "lat": 8.52629,
+    "slug": "riverlands",
+    "hue": 150.0,
+    "colour": "#2fc67a",
+    "labelColour": "#15844c"
+  },
+  {
+    "name": "Crownsland",
+    "bbox": [
+      17.4613,
+      2.563,
+      25.3213,
+      10.1449
+    ],
+    "sourceName": "Crownsland",
+    "claimedBy": "Targaryen",
+    "lon": 19.89788,
+    "lat": 5.44414,
+    "slug": "crownsland",
+    "hue": 180.0,
+    "colour": "#2fc6c6",
+    "labelColour": "#158484"
+  },
+  {
+    "name": "The Westerlands",
+    "bbox": [
+      5.4846,
+      1.722,
+      14.2557,
+      11.1682
+    ],
+    "sourceName": "The Westerlands",
+    "claimedBy": "Lannister",
+    "lon": 10.0894,
+    "lat": 5.40601,
+    "slug": "the-westerlands",
+    "hue": 210.0,
+    "colour": "#2f7ac6",
+    "labelColour": "#154c84"
+  },
+  {
+    "name": "The Reach",
+    "bbox": [
+      5.4332,
+      -11.4084,
+      19.3326,
+      5.3415
+    ],
+    "sourceName": "The Reach",
+    "claimedBy": "Tyrell",
+    "lon": 15.51026,
+    "lat": 1.2378,
+    "slug": "the-reach",
+    "hue": 240.0,
+    "colour": "#2f2fc6",
+    "labelColour": "#151584"
+  },
+  {
+    "name": "Stormlands",
+    "bbox": [
+      12.9669,
+      -5.0887,
+      25.8905,
+      2.9068
+    ],
+    "sourceName": "Stormlands",
+    "claimedBy": "Baratheon",
+    "lon": 20.85033,
+    "lat": 0.70803,
+    "slug": "stormlands",
+    "hue": 270.0,
+    "colour": "#7a2fc6",
+    "labelColour": "#4c1584"
+  },
+  {
+    "name": "Dorne",
+    "bbox": [
+      9.5009,
+      -11.2225,
+      26.1455,
+      -3.3985
+    ],
+    "sourceName": "Dorne",
+    "claimedBy": "Martell",
+    "lon": 14.1614,
+    "lat": -7.7017,
+    "slug": "dorne",
+    "hue": 300.0,
+    "colour": "#c62fc6",
+    "labelColour": "#841584"
+  }
+]
