@@ -1,0 +1,58 @@
+{
+  "_comment": [
+    "Travel speeds and terrain costs. These are the softest numbers in the whole",
+    "project: George R. R. Martin never publishes a rate table, so every figure",
+    "here is inferred from journeys described in the text plus real medieval",
+    "logistics. They live in config precisely because they are meant to be argued",
+    "with — edit, then re-run pipeline/07_validate_routing.py to see the effect on",
+    "the canonical journey checks.",
+    "",
+    "milesPerDay is a sustained daily march on maintained road, not a sprint.",
+    "offRoadPenalty multiplies the terrain cost of every non-road land cell."
+  ],
+  "modes": {
+    "foot": {
+      "label": "On foot",
+      "milesPerDay": 20,
+      "offRoadPenalty": 1.0,
+      "impassable": [],
+      "note": "A party on foot makes about 20 miles a day. An army dragging a baggage train makes rather less, and the Golden Company would tell you so."
+    },
+    "horse": {
+      "label": "On horseback",
+      "milesPerDay": 35,
+      "offRoadPenalty": 1.0,
+      "impassable": [],
+      "note": "A sustainable daily march for a mounted party. A courier riding post with remounts covers two or three times this and ruins horses doing it."
+    },
+    "carriage": {
+      "label": "By wheelhouse",
+      "milesPerDay": 20,
+      "offRoadPenalty": 1.9,
+      "impassable": ["swamp", "mountain"],
+      "note": "Wheeled transport is road-bound and slow. Robert's wheelhouse — forty feet long, drawn by dozens of carthorses — held the royal progress to a crawl and could not leave the kingsroad at all."
+    },
+    "dragon": {
+      "label": "By dragon",
+      "milesPerDay": 500,
+      "flies": true,
+      "note": "Flies a straight line over any terrain or sea. 500 miles a day is the fan-consensus sustained pace inferred from flight times in the text; a dragon in haste does far better over short distances."
+    },
+    "ship": {
+      "label": "By ship",
+      "milesPerDay": 120,
+      "sails": true,
+      "note": "Coast-hugging sail at roughly 5 knots averaged across a full day, allowing for nights at anchor and contrary winds. A swift galley in good weather does better."
+    }
+  },
+  "terrainCost": {
+    "road": 1.0,
+    "plains": 1.55,
+    "steppe": 1.45,
+    "hills": 2.0,
+    "forest": 2.2,
+    "desert": 2.4,
+    "swamp": 3.0,
+    "mountain": 3.6
+  }
+}
