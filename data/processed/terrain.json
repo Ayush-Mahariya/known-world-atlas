@@ -1,0 +1,51 @@
+{
+  "width": 745,
+  "height": 745,
+  "cellDeg": 0.125,
+  "minLon": -0.0989,
+  "minLat": -43.002162,
+  "milesPerDegree": 64.9346,
+  "rowOrder": "south-to-north, west-to-east, row-major",
+  "legend": {
+    "0": "ocean",
+    "1": "plains",
+    "2": "steppe",
+    "3": "forest",
+    "4": "desert",
+    "5": "swamp",
+    "6": "hills",
+    "7": "mountain",
+    "8": "lake",
+    "9": "road"
+  },
+  "landCost": {
+    "9": 1.0,
+    "1": 1.55,
+    "2": 1.45,
+    "6": 2.0,
+    "3": 2.2,
+    "4": 2.4,
+    "5": 3.0,
+    "7": 3.6
+  },
+  "seaCost": {
+    "0": 1.0
+  },
+  "water": [
+    0,
+    8
+  ],
+  "counts": {
+    "ocean": 376250,
+    "plains": 68829,
+    "steppe": 17457,
+    "forest": 25010,
+    "desert": 23910,
+    "swamp": 1117,
+    "hills": 0,
+    "mountain": 38108,
+    "lake": 2806,
+    "road": 1538
+  },
+  "binary": "terrain.bin (uint8, one byte per cell)"
+}

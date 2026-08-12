@@ -1,0 +1,72 @@
+{
+  "milesPerDegree": 64.9346,
+  "model": "planar",
+  "modelNote": "Source geometry is a flat map given WGS84 degrees (plate carree). Distance = hypot(dLon, dLat) * milesPerDegree. Do NOT use haversine: it squashes east-west distances by cos(lat).",
+  "worstAnchorErrorPct": 22.1,
+  "anchors": [
+    {
+      "label": "The Wall, end to end",
+      "degrees": 4.3814,
+      "canonMiles": 300,
+      "weight": 1.0,
+      "source": "AGOT — the Wall is 300 miles long",
+      "fittedMiles": 284.5,
+      "errorPct": -5.2
+    },
+    {
+      "label": "Wall to the southern tip of Dorne",
+      "degrees": 46.2812,
+      "canonMiles": 3000,
+      "weight": 1.0,
+      "source": "GRRM — Westeros is roughly 3,000 miles north to south",
+      "fittedMiles": 3005.3,
+      "errorPct": 0.2
+    },
+    {
+      "label": "King's Landing to Winterfell",
+      "degrees": 23.1036,
+      "canonMiles": 1500,
+      "weight": 1.0,
+      "source": "kingsroad journey, ~1,400-1,600 miles by common reckoning",
+      "fittedMiles": 1500.2,
+      "errorPct": 0.0
+    },
+    {
+      "label": "Winterfell to Castle Black",
+      "degrees": 9.3264,
+      "canonMiles": 600,
+      "weight": 1.0,
+      "source": "AGOT — roughly 600 miles up the kingsroad",
+      "fittedMiles": 605.6,
+      "errorPct": 0.9
+    },
+    {
+      "label": "King's Landing to Oldtown",
+      "degrees": 15.4609,
+      "canonMiles": 1000,
+      "weight": 1.0,
+      "source": "roseroad journey, ~1,000 miles",
+      "fittedMiles": 1004.0,
+      "errorPct": 0.4
+    },
+    {
+      "label": "King's Landing to Storm's End",
+      "degrees": 5.8705,
+      "canonMiles": 400,
+      "weight": 0.5,
+      "source": "kingsroad/stormlands, approximate",
+      "fittedMiles": 381.2,
+      "errorPct": -4.7
+    },
+    {
+      "label": "Pentos to Dragonstone",
+      "degrees": 7.1985,
+      "canonMiles": 600,
+      "weight": 0.25,
+      "source": "fan-derived from sailing times; Essos placement is speculative",
+      "fittedMiles": 467.4,
+      "errorPct": -22.1
+    }
+  ],
+  "geometrySource": "cadaei / theMountainGoat / Tear — CC BY-NC-SA 3.0"
+}
