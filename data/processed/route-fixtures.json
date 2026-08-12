@@ -1,0 +1,108 @@
+{
+  "generatedBy": "pipeline/07_validate_routing.py",
+  "note": "Reference results for web/src/lib/router.parity.ts. Regenerate whenever the cost model or grid changes.",
+  "routes": [
+    {
+      "from": "King's Landing",
+      "to": "Winterfell",
+      "mode": "horse",
+      "miles": 1637.2502749204523,
+      "days": 46.778579283441495,
+      "pathPoints": 182,
+      "straightLine": false
+    },
+    {
+      "from": "King's Landing",
+      "to": "Winterfell",
+      "mode": "carriage",
+      "miles": 1637.2502749204523,
+      "days": 81.86251374602261,
+      "pathPoints": 182,
+      "straightLine": false
+    },
+    {
+      "from": "Winterfell",
+      "to": "Castle Black",
+      "mode": "horse",
+      "miles": 662.8933669474964,
+      "days": 19.333373592731057,
+      "pathPoints": 69,
+      "straightLine": false
+    },
+    {
+      "from": "King's Landing",
+      "to": "Oldtown",
+      "mode": "horse",
+      "miles": 1177.1375669077208,
+      "days": 33.632501911649165,
+      "pathPoints": 122,
+      "straightLine": false
+    },
+    {
+      "from": "King's Landing",
+      "to": "Storm's End",
+      "mode": "horse",
+      "miles": 435.0454219554521,
+      "days": 12.429869198727204,
+      "pathPoints": 43,
+      "straightLine": false
+    },
+    {
+      "from": "King's Landing",
+      "to": "Riverrun",
+      "mode": "horse",
+      "miles": 699.5385479570424,
+      "days": 20.294748854461922,
+      "pathPoints": 76,
+      "straightLine": false
+    },
+    {
+      "from": "King's Landing",
+      "to": "Casterly Rock",
+      "mode": "horse",
+      "miles": 888.7718399443133,
+      "days": 25.754247324073237,
+      "pathPoints": 96,
+      "straightLine": false
+    },
+    {
+      "from": "Dragonstone",
+      "to": "Winterfell",
+      "mode": "dragon",
+      "miles": 1420.16982158676,
+      "days": 2.84033964317352,
+      "pathPoints": 2,
+      "straightLine": true
+    },
+    {
+      "from": "King's Landing",
+      "to": "Braavos",
+      "mode": "ship",
+      "miles": 1170.512339864764,
+      "days": 9.754269498873034,
+      "pathPoints": 110,
+      "straightLine": false
+    },
+    {
+      "from": "King's Landing",
+      "to": "Winterfell",
+      "mode": "foot",
+      "miles": 1637.2502749204523,
+      "days": 81.86251374602261,
+      "pathPoints": 182,
+      "straightLine": false
+    }
+  ],
+  "blocked": [
+    {
+      "from": "Winterfell",
+      "to": "Pyke",
+      "mode": "horse"
+    },
+    {
+      "from": "Winterfell",
+      "to": "Pyke",
+      "mode": "ship"
+    }
+  ]
+}
