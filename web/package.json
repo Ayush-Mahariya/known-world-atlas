@@ -1,0 +1,22 @@
+{
+  "name": "known-world-atlas-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run typecheck && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.test.json",
+    "test:parity": "tsx test/router.parity.ts"
+  },
+  "dependencies": {
+    "maplibre-gl": "^5.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "tsx": "^4.23.12",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.0"
+  }
+}
