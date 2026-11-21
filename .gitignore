@@ -18,3 +18,6 @@ data/raw/basemaps/
 
 # os
 .DS_Store
+
+# pipeline caches — rebuild with pipeline stages 04 and 05
+data/lore/
